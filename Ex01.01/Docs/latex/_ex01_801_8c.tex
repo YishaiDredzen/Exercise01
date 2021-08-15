@@ -1,0 +1,88 @@
+\hypertarget{_ex01_801_8c}{}\doxysection{Ex01.01.c File Reference}
+\label{_ex01_801_8c}\index{Ex01.01.c@{Ex01.01.c}}
+{\ttfamily \#include \char`\"{}Ex0101.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_ex01_801_8c_ae5be23f5070dff2f60a574957f8a606b}{print\+Inputted\+Char}} (char input)
+\begin{DoxyCompactList}\small\item\em Prints received inputted character till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}{get\+Char\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Receives inputted character till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_801_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}\label{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}} 
+\index{Ex01.01.c@{Ex01.01.c}!getCharInput@{getCharInput}}
+\index{getCharInput@{getCharInput}!Ex01.01.c@{Ex01.01.c}}
+\doxysubsubsection{\texorpdfstring{getCharInput()}{getCharInput()}}
+{\footnotesize\ttfamily void get\+Char\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Receives inputted character till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. 
+
+
+
+Definition at line 12 of file Ex01.\+01.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     printf\_s(\textcolor{stringliteral}{"{}Enter a character ('Q' or 'q' to Quit): "{}});}
+\DoxyCodeLine{15     \textcolor{keywordtype}{char} input;}
+\DoxyCodeLine{16     scanf\_s(\textcolor{stringliteral}{"{} \%c"{}}, \&input);}
+\DoxyCodeLine{17     \textcolor{keywordflow}{if} (input != \textcolor{charliteral}{'q'} \&\& input != \textcolor{charliteral}{'Q'})}
+\DoxyCodeLine{18     \{}
+\DoxyCodeLine{19         \mbox{\hyperlink{_ex01_801_8c_ae5be23f5070dff2f60a574957f8a606b}{printInputtedChar}}(input);}
+\DoxyCodeLine{20         \mbox{\hyperlink{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}{getCharInput}}();}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_801_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_ex01_801_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Ex01.01.c@{Ex01.01.c}!main@{main}}
+\index{main@{main}!Ex01.01.c@{Ex01.01.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Ex01.\+01.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     \mbox{\hyperlink{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}{getCharInput}}();}
+\DoxyCodeLine{27     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_801_8c_ae5be23f5070dff2f60a574957f8a606b}\label{_ex01_801_8c_ae5be23f5070dff2f60a574957f8a606b}} 
+\index{Ex01.01.c@{Ex01.01.c}!printInputtedChar@{printInputtedChar}}
+\index{printInputtedChar@{printInputtedChar}!Ex01.01.c@{Ex01.01.c}}
+\doxysubsubsection{\texorpdfstring{printInputtedChar()}{printInputtedChar()}}
+{\footnotesize\ttfamily void print\+Inputted\+Char (\begin{DoxyParamCaption}\item[{char}]{input }\end{DoxyParamCaption})}
+
+
+
+Prints received inputted character till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the character the user had inputted \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file Ex01.\+01.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     printf\_s(\textcolor{stringliteral}{"{}\%c\(\backslash\)n"{}}, input);}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['main_72',['main',['../_ex01_801_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;Ex01.01.c'],['../_ex01_802_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Ex01.02.c'],['../_ex01_803_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Ex01.03.c'],['../_ex01_804_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;Ex01.04.c'],['../_ex01_805_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;Ex01.05.c'],['../_ex01_806_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;Ex01.06.c'],['../_ex01_807_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Ex01.07.c'],['../_ex01_808_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;Ex01.08.c']]],
+  ['max_73',['Max',['../_ex01_808_8c.html#a488163074c649089e3993207472842d6',1,'Max(int firstNumber, int secondNumber):&#160;Ex01.08.c'],['../_ex01_808_8h.html#a488163074c649089e3993207472842d6',1,'Max(int firstNumber, int secondNumber):&#160;Ex01.08.c']]],
+  ['min_74',['Min',['../_ex01_808_8c.html#a21a5bbddc5719cd2e173df3acf62cca9',1,'Min(int firstNumber, int secondNumber):&#160;Ex01.08.c'],['../_ex01_808_8h.html#a21a5bbddc5719cd2e173df3acf62cca9',1,'Min(int firstNumber, int secondNumber):&#160;Ex01.08.c']]]
+];

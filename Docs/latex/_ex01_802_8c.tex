@@ -1,0 +1,126 @@
+\hypertarget{_ex01_802_8c}{}\doxysection{Ex01.02/\+Ex01.02.c File Reference}
+\label{_ex01_802_8c}\index{Ex01.02/Ex01.02.c@{Ex01.02/Ex01.02.c}}
+{\ttfamily \#include \char`\"{}Ex01.\+02.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_ex01_802_8c_afe7e13b2d025b22d4e2ea4e95149538f}{ASCII\+\_\+\+DIST\+\_\+\+BETWEEN\+\_\+\+CASES}}~32
+\item 
+\#define \mbox{\hyperlink{_ex01_802_8c_abcf72cd23bdafb47b19023d91b4c107d}{INPUT\+\_\+\+SIZE}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_ex01_802_8c_a5b596dafcd7e2a46a7fcf14cdbac3235}{Print\+Upper\+Case\+Inputted\+Char}} (char input)
+\begin{DoxyCompactList}\small\item\em Prints inputted character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ex01_802_8c_af8869b51e59c4e843a7c33fc0135b57a}{Get\+Char\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Asks user for a character input till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is entered. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_802_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_ex01_802_8c_afe7e13b2d025b22d4e2ea4e95149538f}\label{_ex01_802_8c_afe7e13b2d025b22d4e2ea4e95149538f}} 
+\index{Ex01.02.c@{Ex01.02.c}!ASCII\_DIST\_BETWEEN\_CASES@{ASCII\_DIST\_BETWEEN\_CASES}}
+\index{ASCII\_DIST\_BETWEEN\_CASES@{ASCII\_DIST\_BETWEEN\_CASES}!Ex01.02.c@{Ex01.02.c}}
+\doxysubsubsection{\texorpdfstring{ASCII\_DIST\_BETWEEN\_CASES}{ASCII\_DIST\_BETWEEN\_CASES}}
+{\footnotesize\ttfamily \#define ASCII\+\_\+\+DIST\+\_\+\+BETWEEN\+\_\+\+CASES~32}
+
+
+
+Definition at line 4 of file Ex01.\+02.\+c.
+
+\mbox{\Hypertarget{_ex01_802_8c_abcf72cd23bdafb47b19023d91b4c107d}\label{_ex01_802_8c_abcf72cd23bdafb47b19023d91b4c107d}} 
+\index{Ex01.02.c@{Ex01.02.c}!INPUT\_SIZE@{INPUT\_SIZE}}
+\index{INPUT\_SIZE@{INPUT\_SIZE}!Ex01.02.c@{Ex01.02.c}}
+\doxysubsubsection{\texorpdfstring{INPUT\_SIZE}{INPUT\_SIZE}}
+{\footnotesize\ttfamily \#define INPUT\+\_\+\+SIZE~1}
+
+
+
+Definition at line 5 of file Ex01.\+02.\+c.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ex01_802_8c_af8869b51e59c4e843a7c33fc0135b57a}\label{_ex01_802_8c_af8869b51e59c4e843a7c33fc0135b57a}} 
+\index{Ex01.02.c@{Ex01.02.c}!GetCharInput@{GetCharInput}}
+\index{GetCharInput@{GetCharInput}!Ex01.02.c@{Ex01.02.c}}
+\doxysubsubsection{\texorpdfstring{GetCharInput()}{GetCharInput()}}
+{\footnotesize\ttfamily void Get\+Char\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asks user for a character input till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is entered. 
+
+
+
+Definition at line 21 of file Ex01.\+02.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     printf\_s(\textcolor{stringliteral}{"{}Enter a character ('Q' or 'q' to Quit): "{}});}
+\DoxyCodeLine{24     \textcolor{keywordtype}{char} input;}
+\DoxyCodeLine{25     scanf\_s(\textcolor{stringliteral}{"{} \%c"{}}, \&input, \mbox{\hyperlink{_ex01_802_8c_abcf72cd23bdafb47b19023d91b4c107d}{INPUT\_SIZE}});}
+\DoxyCodeLine{26     \textcolor{keywordflow}{if} (input != \textcolor{charliteral}{'q'} \&\& input != \textcolor{charliteral}{'Q'})}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \mbox{\hyperlink{_ex01_802_8c_a5b596dafcd7e2a46a7fcf14cdbac3235}{PrintUpperCaseInputtedChar}}(input);}
+\DoxyCodeLine{29         \mbox{\hyperlink{_ex01_802_8c_af8869b51e59c4e843a7c33fc0135b57a}{GetCharInput}}();}
+\DoxyCodeLine{30     \}}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_802_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_ex01_802_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Ex01.02.c@{Ex01.02.c}!main@{main}}
+\index{main@{main}!Ex01.02.c@{Ex01.02.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file Ex01.\+02.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35     \mbox{\hyperlink{_ex01_802_8c_af8869b51e59c4e843a7c33fc0135b57a}{GetCharInput}}();}
+\DoxyCodeLine{36     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_802_8c_a5b596dafcd7e2a46a7fcf14cdbac3235}\label{_ex01_802_8c_a5b596dafcd7e2a46a7fcf14cdbac3235}} 
+\index{Ex01.02.c@{Ex01.02.c}!PrintUpperCaseInputtedChar@{PrintUpperCaseInputtedChar}}
+\index{PrintUpperCaseInputtedChar@{PrintUpperCaseInputtedChar}!Ex01.02.c@{Ex01.02.c}}
+\doxysubsubsection{\texorpdfstring{PrintUpperCaseInputtedChar()}{PrintUpperCaseInputtedChar()}}
+{\footnotesize\ttfamily void Print\+Upper\+Case\+Inputted\+Char (\begin{DoxyParamCaption}\item[{char}]{input }\end{DoxyParamCaption})}
+
+
+
+Prints inputted character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the character that has been inputted \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file Ex01.\+02.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keywordflow}{if} (input <= 'z' \&\& input >= \textcolor{charliteral}{'a'})}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11         printf\_s(\textcolor{stringliteral}{"{}\%c\(\backslash\)n"{}}, input -\/ \mbox{\hyperlink{_ex01_802_8c_afe7e13b2d025b22d4e2ea4e95149538f}{ASCII\_DIST\_BETWEEN\_CASES}});}
+\DoxyCodeLine{12     \}}
+\DoxyCodeLine{13     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15         printf\_s(\textcolor{stringliteral}{"{}\%c\(\backslash\)n"{}}, input);}
+\DoxyCodeLine{16     \}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}

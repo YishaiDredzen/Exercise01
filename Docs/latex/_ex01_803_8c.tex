@@ -1,0 +1,97 @@
+\hypertarget{_ex01_803_8c}{}\doxysection{Ex01.03/\+Ex01.03.c File Reference}
+\label{_ex01_803_8c}\index{Ex01.03/Ex01.03.c@{Ex01.03/Ex01.03.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Ex01.\+03.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_ex01_803_8c_a9b4ba3650de963b1af915361bbc34b4a}{FIRST\+\_\+\+POSITION}}~0
+\item 
+\#define \mbox{\hyperlink{_ex01_803_8c_ae668ecfa1856b197ccc8bbd228836b70}{NULL\+\_\+\+POSITION}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_ex01_803_8c_aed608dcbb289b6301d608577f051b497}{Custom\+Strlen}} (char $\ast$input\+String, int current\+Position)
+\begin{DoxyCompactList}\small\item\em Computes the number of characters in a string up to (but not including) the termination null character. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_803_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_ex01_803_8c_a9b4ba3650de963b1af915361bbc34b4a}\label{_ex01_803_8c_a9b4ba3650de963b1af915361bbc34b4a}} 
+\index{Ex01.03.c@{Ex01.03.c}!FIRST\_POSITION@{FIRST\_POSITION}}
+\index{FIRST\_POSITION@{FIRST\_POSITION}!Ex01.03.c@{Ex01.03.c}}
+\doxysubsubsection{\texorpdfstring{FIRST\_POSITION}{FIRST\_POSITION}}
+{\footnotesize\ttfamily \#define FIRST\+\_\+\+POSITION~0}
+
+
+
+Definition at line 3 of file Ex01.\+03.\+c.
+
+\mbox{\Hypertarget{_ex01_803_8c_ae668ecfa1856b197ccc8bbd228836b70}\label{_ex01_803_8c_ae668ecfa1856b197ccc8bbd228836b70}} 
+\index{Ex01.03.c@{Ex01.03.c}!NULL\_POSITION@{NULL\_POSITION}}
+\index{NULL\_POSITION@{NULL\_POSITION}!Ex01.03.c@{Ex01.03.c}}
+\doxysubsubsection{\texorpdfstring{NULL\_POSITION}{NULL\_POSITION}}
+{\footnotesize\ttfamily \#define NULL\+\_\+\+POSITION~0}
+
+
+
+Definition at line 4 of file Ex01.\+03.\+c.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ex01_803_8c_aed608dcbb289b6301d608577f051b497}\label{_ex01_803_8c_aed608dcbb289b6301d608577f051b497}} 
+\index{Ex01.03.c@{Ex01.03.c}!CustomStrlen@{CustomStrlen}}
+\index{CustomStrlen@{CustomStrlen}!Ex01.03.c@{Ex01.03.c}}
+\doxysubsubsection{\texorpdfstring{CustomStrlen()}{CustomStrlen()}}
+{\footnotesize\ttfamily int Custom\+Strlen (\begin{DoxyParamCaption}\item[{char $\ast$}]{input\+String,  }\item[{int}]{current\+Position }\end{DoxyParamCaption})}
+
+
+
+Computes the number of characters in a string up to (but not including) the termination null character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+String,current\+Position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of characters in input\+String 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file Ex01.\+03.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keywordflow}{if} (inputString[currentPosition] == \textcolor{charliteral}{'\(\backslash\)0'})}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11         \textcolor{keywordflow}{return} \mbox{\hyperlink{_ex01_803_8c_ae668ecfa1856b197ccc8bbd228836b70}{NULL\_POSITION}};}
+\DoxyCodeLine{12     \}}
+\DoxyCodeLine{13     \textcolor{keywordflow}{return} 1 + \mbox{\hyperlink{_ex01_803_8c_aed608dcbb289b6301d608577f051b497}{CustomStrlen}}(inputString, currentPosition + 1);}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_803_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_ex01_803_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Ex01.03.c@{Ex01.03.c}!main@{main}}
+\index{main@{main}!Ex01.03.c@{Ex01.03.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file Ex01.\+03.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     \textcolor{keywordtype}{char}* stringForTesting = \textcolor{stringliteral}{"{}Hello, my name is Harry"{}};}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} lengthOfStringForTesting = \mbox{\hyperlink{_ex01_803_8c_aed608dcbb289b6301d608577f051b497}{CustomStrlen}}(stringForTesting, \mbox{\hyperlink{_ex01_803_8c_a9b4ba3650de963b1af915361bbc34b4a}{FIRST\_POSITION}});}
+\DoxyCodeLine{20     printf\_s(\textcolor{stringliteral}{"{}Length of string is \%d"{}}, lengthOfStringForTesting);}
+\DoxyCodeLine{21     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}

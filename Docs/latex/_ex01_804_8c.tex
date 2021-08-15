@@ -1,0 +1,171 @@
+\hypertarget{_ex01_804_8c}{}\doxysection{Ex01.04/\+Ex01.04.c File Reference}
+\label{_ex01_804_8c}\index{Ex01.04/Ex01.04.c@{Ex01.04/Ex01.04.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Ex01.\+04.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_ex01_804_8c_abd1137c84197eca32b4bb27bfc97a983}{Get\+Diamond\+Base\+Size\+Input}} (void)
+\begin{DoxyCompactList}\small\item\em Asks user for an odd number as input for a base of a diamond. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ex01_804_8c_a3f10993e1f38c8ec3dccd61eec047a83}{Print\+Stars}} (int number\+Of\+Stars)
+\begin{DoxyCompactList}\small\item\em Prints a number of stars in the row. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ex01_804_8c_a6cd4c2e21d7ce84d8b639933a2c01089}{Print\+Spaces}} (int number\+Of\+Spaces)
+\begin{DoxyCompactList}\small\item\em Prints a number of spaces in the row. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ex01_804_8c_ac79300cdef3087423454caeb1bd3bc15}{Print\+Diamond}} (int diamond\+Base\+Size)
+\begin{DoxyCompactList}\small\item\em Controls the printing of spaces and stars. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_804_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ex01_804_8c_abd1137c84197eca32b4bb27bfc97a983}\label{_ex01_804_8c_abd1137c84197eca32b4bb27bfc97a983}} 
+\index{Ex01.04.c@{Ex01.04.c}!GetDiamondBaseSizeInput@{GetDiamondBaseSizeInput}}
+\index{GetDiamondBaseSizeInput@{GetDiamondBaseSizeInput}!Ex01.04.c@{Ex01.04.c}}
+\doxysubsubsection{\texorpdfstring{GetDiamondBaseSizeInput()}{GetDiamondBaseSizeInput()}}
+{\footnotesize\ttfamily int Get\+Diamond\+Base\+Size\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Asks user for an odd number as input for a base of a diamond. 
+
+\begin{DoxyReturn}{Returns}
+diamond\+Base\+Size the number of stars for the base of a diamond. 
+\end{DoxyReturn}
+
+
+Definition at line 6 of file Ex01.\+04.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     \textcolor{keywordtype}{int} diamondBaseSize;}
+\DoxyCodeLine{9     printf\_s(\textcolor{stringliteral}{"{}Enter an odd number: "{}});}
+\DoxyCodeLine{10     scanf\_s(\textcolor{stringliteral}{"{}\%d"{}}, \&diamondBaseSize);}
+\DoxyCodeLine{11     \textcolor{keywordflow}{if} (diamondBaseSize \% 2 == 0)}
+\DoxyCodeLine{12     \{}
+\DoxyCodeLine{13         \textcolor{keywordflow}{return} 0; \textcolor{comment}{/*didn't know what to return for an error*/}}
+\DoxyCodeLine{14     \}}
+\DoxyCodeLine{15     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{16     \{}
+\DoxyCodeLine{17         \textcolor{keywordflow}{return} diamondBaseSize;}
+\DoxyCodeLine{18     \}}
+\DoxyCodeLine{19 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_804_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{_ex01_804_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{Ex01.04.c@{Ex01.04.c}!main@{main}}
+\index{main@{main}!Ex01.04.c@{Ex01.04.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file Ex01.\+04.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54 \{}
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} diamondBaseSize = \mbox{\hyperlink{_ex01_804_8c_abd1137c84197eca32b4bb27bfc97a983}{GetDiamondBaseSizeInput}}();}
+\DoxyCodeLine{56     \textcolor{keywordflow}{if} (diamondBaseSize == 0)}
+\DoxyCodeLine{57     \{}
+\DoxyCodeLine{58         printf\_s(\textcolor{stringliteral}{"{}An even number was inputted."{}});}
+\DoxyCodeLine{59     \}}
+\DoxyCodeLine{60     \mbox{\hyperlink{_ex01_804_8c_ac79300cdef3087423454caeb1bd3bc15}{PrintDiamond}}(diamondBaseSize);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{63 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_804_8c_ac79300cdef3087423454caeb1bd3bc15}\label{_ex01_804_8c_ac79300cdef3087423454caeb1bd3bc15}} 
+\index{Ex01.04.c@{Ex01.04.c}!PrintDiamond@{PrintDiamond}}
+\index{PrintDiamond@{PrintDiamond}!Ex01.04.c@{Ex01.04.c}}
+\doxysubsubsection{\texorpdfstring{PrintDiamond()}{PrintDiamond()}}
+{\footnotesize\ttfamily void Print\+Diamond (\begin{DoxyParamCaption}\item[{int}]{diamond\+Base\+Size }\end{DoxyParamCaption})}
+
+
+
+Controls the printing of spaces and stars. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em diamond\+Base\+Size} & the number of stars at the base of the diamond. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Ex01.\+04.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{}
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} linesFromBase = diamondBaseSize / 2;}
+\DoxyCodeLine{44     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} rowNumber = 0; rowNumber < diamondBaseSize; rowNumber++)}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         \textcolor{keywordtype}{int} numberOfSpaces = abs(linesFromBase -\/ rowNumber);}
+\DoxyCodeLine{47         \textcolor{keywordtype}{int} numberOfStars = diamondBaseSize -\/ (2 * numberOfSpaces);}
+\DoxyCodeLine{48         \mbox{\hyperlink{_ex01_804_8c_a6cd4c2e21d7ce84d8b639933a2c01089}{PrintSpaces}}(numberOfSpaces);}
+\DoxyCodeLine{49         \mbox{\hyperlink{_ex01_804_8c_a3f10993e1f38c8ec3dccd61eec047a83}{PrintStars}}(numberOfStars);}
+\DoxyCodeLine{50     \}}
+\DoxyCodeLine{51 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_804_8c_a6cd4c2e21d7ce84d8b639933a2c01089}\label{_ex01_804_8c_a6cd4c2e21d7ce84d8b639933a2c01089}} 
+\index{Ex01.04.c@{Ex01.04.c}!PrintSpaces@{PrintSpaces}}
+\index{PrintSpaces@{PrintSpaces}!Ex01.04.c@{Ex01.04.c}}
+\doxysubsubsection{\texorpdfstring{PrintSpaces()}{PrintSpaces()}}
+{\footnotesize\ttfamily void Print\+Spaces (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Spaces }\end{DoxyParamCaption})}
+
+
+
+Prints a number of spaces in the row. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Spaces} & the number of spaces to be printed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file Ex01.\+04.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33 \{}
+\DoxyCodeLine{34     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} index = 0; index < numberOfSpaces; index++)}
+\DoxyCodeLine{35     \{}
+\DoxyCodeLine{36         printf\_s(\textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{37     \}}
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_804_8c_a3f10993e1f38c8ec3dccd61eec047a83}\label{_ex01_804_8c_a3f10993e1f38c8ec3dccd61eec047a83}} 
+\index{Ex01.04.c@{Ex01.04.c}!PrintStars@{PrintStars}}
+\index{PrintStars@{PrintStars}!Ex01.04.c@{Ex01.04.c}}
+\doxysubsubsection{\texorpdfstring{PrintStars()}{PrintStars()}}
+{\footnotesize\ttfamily void Print\+Stars (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Stars }\end{DoxyParamCaption})}
+
+
+
+Prints a number of stars in the row. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Stars} & hte number of stars to be printed in the row. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file Ex01.\+04.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} index = 0; index < numberOfStars; index++)}
+\DoxyCodeLine{25     \{}
+\DoxyCodeLine{26         printf\_s(\textcolor{stringliteral}{"{}*"{}});}
+\DoxyCodeLine{27     \}}
+\DoxyCodeLine{28     printf\_s(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}

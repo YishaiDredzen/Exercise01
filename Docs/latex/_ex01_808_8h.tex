@@ -1,0 +1,131 @@
+\hypertarget{_ex01_808_8h}{}\doxysection{Ex01.08/\+Ex01.08.h File Reference}
+\label{_ex01_808_8h}\index{Ex01.08/Ex01.08.h@{Ex01.08/Ex01.08.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_ex01_808_8h_a21a5bbddc5719cd2e173df3acf62cca9}{Min}} (int first\+Number, int second\+Number)
+\begin{DoxyCompactList}\small\item\em Computes the lower of two numbers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_808_8h_a488163074c649089e3993207472842d6}{Max}} (int first\+Number, int second\+Number)
+\begin{DoxyCompactList}\small\item\em Computes the higher of two numbers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_808_8h_af78751f9fc37b21eed808d731f921cb3}{Get\+Number\+Input}} (void)
+\begin{DoxyCompactList}\small\item\em Asks the user to input a number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ex01_808_8h_aa56963ca4f4a08641f87d79f111a5c0a}{Print\+Input\+Prompt}} (void)
+\begin{DoxyCompactList}\small\item\em Prints a prompt for the user to enter in a number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ex01_808_8h_af78751f9fc37b21eed808d731f921cb3}\label{_ex01_808_8h_af78751f9fc37b21eed808d731f921cb3}} 
+\index{Ex01.08.h@{Ex01.08.h}!GetNumberInput@{GetNumberInput}}
+\index{GetNumberInput@{GetNumberInput}!Ex01.08.h@{Ex01.08.h}}
+\doxysubsubsection{\texorpdfstring{GetNumberInput()}{GetNumberInput()}}
+{\footnotesize\ttfamily int Get\+Number\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Asks the user to input a number. 
+
+\begin{DoxyReturn}{Returns}
+the inputted value
+\end{DoxyReturn}
+Asks the user to input a number. 
+
+Definition at line 11 of file Ex01.\+07.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     printf\_s(\textcolor{stringliteral}{"{}Enter a number (0 to exit): "{}});}
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} numberInputted;}
+\DoxyCodeLine{15     scanf\_s(\textcolor{stringliteral}{"{} \%d"{}}, \&numberInputted);}
+\DoxyCodeLine{16     \textcolor{keywordflow}{if} (numberInputted != 0)}
+\DoxyCodeLine{17     \{}
+\DoxyCodeLine{18         \mbox{\hyperlink{_ex01_807_8c_a3623a777e2c497436c0179f57e947ac8}{GetNumberInput}}();}
+\DoxyCodeLine{19         \mbox{\hyperlink{_ex01_807_8c_a0bda8df42603b6212b75c84c881edf58}{PrintNumber}}(numberInputted);}
+\DoxyCodeLine{20     \}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_808_8h_a488163074c649089e3993207472842d6}\label{_ex01_808_8h_a488163074c649089e3993207472842d6}} 
+\index{Ex01.08.h@{Ex01.08.h}!Max@{Max}}
+\index{Max@{Max}!Ex01.08.h@{Ex01.08.h}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}}
+{\footnotesize\ttfamily int Max (\begin{DoxyParamCaption}\item[{int}]{first\+Number,  }\item[{int}]{second\+Number }\end{DoxyParamCaption})}
+
+
+
+Computes the higher of two numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Number} & first number to be compared. \\
+\hline
+{\em second\+Number} & second number to be compared to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The higher of the two numbers. 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Ex01.\+08.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     \textcolor{keywordflow}{return} (firstNumber > secondNumber) ? firstNumber : secondNumber;}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_808_8h_a21a5bbddc5719cd2e173df3acf62cca9}\label{_ex01_808_8h_a21a5bbddc5719cd2e173df3acf62cca9}} 
+\index{Ex01.08.h@{Ex01.08.h}!Min@{Min}}
+\index{Min@{Min}!Ex01.08.h@{Ex01.08.h}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}}
+{\footnotesize\ttfamily int Min (\begin{DoxyParamCaption}\item[{int}]{first\+Number,  }\item[{int}]{second\+Number }\end{DoxyParamCaption})}
+
+
+
+Computes the lower of two numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Number} & first number to be compared. \\
+\hline
+{\em second\+Number} & second number to be compared to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the lower of two numbers 
+\end{DoxyReturn}
+
+
+Definition at line 5 of file Ex01.\+08.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     \textcolor{keywordflow}{return} (secondNumber > firstNumber) ? firstNumber : secondNumber;}
+\DoxyCodeLine{8 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_808_8h_aa56963ca4f4a08641f87d79f111a5c0a}\label{_ex01_808_8h_aa56963ca4f4a08641f87d79f111a5c0a}} 
+\index{Ex01.08.h@{Ex01.08.h}!PrintInputPrompt@{PrintInputPrompt}}
+\index{PrintInputPrompt@{PrintInputPrompt}!Ex01.08.h@{Ex01.08.h}}
+\doxysubsubsection{\texorpdfstring{PrintInputPrompt()}{PrintInputPrompt()}}
+{\footnotesize\ttfamily void Print\+Input\+Prompt (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Prints a prompt for the user to enter in a number. 
+
+
+
+Definition at line 17 of file Ex01.\+08.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     printf\_s(\textcolor{stringliteral}{"{}Enter a number: "{}});}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,43 @@
+\hypertarget{_ex01_803_8h}{}\doxysection{Ex01.03.h File Reference}
+\label{_ex01_803_8h}\index{Ex01.03.h@{Ex01.03.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_ex01_803_8h_aed608dcbb289b6301d608577f051b497}{Custom\+Strlen}} (char $\ast$input\+String, int current\+Position)
+\begin{DoxyCompactList}\small\item\em Computes the number of characters in a string up to (but not including) the termination null character. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ex01_803_8h_aed608dcbb289b6301d608577f051b497}\label{_ex01_803_8h_aed608dcbb289b6301d608577f051b497}} 
+\index{Ex01.03.h@{Ex01.03.h}!CustomStrlen@{CustomStrlen}}
+\index{CustomStrlen@{CustomStrlen}!Ex01.03.h@{Ex01.03.h}}
+\doxysubsubsection{\texorpdfstring{CustomStrlen()}{CustomStrlen()}}
+{\footnotesize\ttfamily int Custom\+Strlen (\begin{DoxyParamCaption}\item[{char $\ast$}]{input\+String,  }\item[{int}]{current\+Position }\end{DoxyParamCaption})}
+
+
+
+Computes the number of characters in a string up to (but not including) the termination null character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+String,current\+Position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of characters in input\+String 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file Ex01.\+03.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keywordflow}{if} (inputString[currentPosition] == \textcolor{charliteral}{'\(\backslash\)0'})}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11         \textcolor{keywordflow}{return} \mbox{\hyperlink{_ex01_803_8c_ae668ecfa1856b197ccc8bbd228836b70}{NULL\_POSITION}};}
+\DoxyCodeLine{12     \}}
+\DoxyCodeLine{13     \textcolor{keywordflow}{return} 1 + \mbox{\hyperlink{_ex01_803_8c_aed608dcbb289b6301d608577f051b497}{CustomStrlen}}(inputString, currentPosition + 1);}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}

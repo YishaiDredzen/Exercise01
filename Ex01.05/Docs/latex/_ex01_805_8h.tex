@@ -1,0 +1,123 @@
+\hypertarget{_ex01_805_8h}{}\doxysection{Ex01.05.h File Reference}
+\label{_ex01_805_8h}\index{Ex01.05.h@{Ex01.05.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_ex01_805_8h_ab25fb5191a75026f4c9704cc81f9eb70}{Get\+IDNumber\+Input}} (void)
+\begin{DoxyCompactList}\small\item\em gets an ID number as input from user \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_ex01_805_8h_a5c0e5d00903bddcd54e791b26f4ee493}{IDIs\+In\+Range}} (int IDNumber)
+\begin{DoxyCompactList}\small\item\em checks the ID number is in the range of ID\+\_\+\+MIN and ID\+\_\+\+MAX \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_805_8h_aae2dc2abb19f02a391fa38f09f11ee3a}{Get\+Next\+Individual\+Digit}} (int IDNumber)
+\begin{DoxyCompactList}\small\item\em computes right most digit of ID number \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_805_8h_a6f132c07e36fcb009572a173ab4029be}{add\+Product\+Digits}} (int current\+Digit\+Doubled)
+\begin{DoxyCompactList}\small\item\em Computes the sum of the digits of a two digit number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_805_8h_a770d634d90d26426e496c972f10d9597}{Double\+Digit}} (int current\+Digit)
+\begin{DoxyCompactList}\small\item\em Doubles the current digit and adds the digits of the product if it is greater than 10. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_ex01_805_8h_a45f038c5ecbad7d35682249b4121d7f4}{Check\+IDValidity}} (int IDNumber)
+\begin{DoxyCompactList}\small\item\em Computes whether an ID number is a valid Te\textquotesingle{}udat Zehut number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ex01_805_8h_a6f132c07e36fcb009572a173ab4029be}\label{_ex01_805_8h_a6f132c07e36fcb009572a173ab4029be}} 
+\index{Ex01.05.h@{Ex01.05.h}!addProductDigits@{addProductDigits}}
+\index{addProductDigits@{addProductDigits}!Ex01.05.h@{Ex01.05.h}}
+\doxysubsubsection{\texorpdfstring{addProductDigits()}{addProductDigits()}}
+{\footnotesize\ttfamily int add\+Product\+Digits (\begin{DoxyParamCaption}\item[{int}]{current\+Digit\+Doubled }\end{DoxyParamCaption})}
+
+
+
+Computes the sum of the digits of a two digit number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Digit\+Doubled} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sum of the digits 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ex01_805_8h_a45f038c5ecbad7d35682249b4121d7f4}\label{_ex01_805_8h_a45f038c5ecbad7d35682249b4121d7f4}} 
+\index{Ex01.05.h@{Ex01.05.h}!CheckIDValidity@{CheckIDValidity}}
+\index{CheckIDValidity@{CheckIDValidity}!Ex01.05.h@{Ex01.05.h}}
+\doxysubsubsection{\texorpdfstring{CheckIDValidity()}{CheckIDValidity()}}
+{\footnotesize\ttfamily bool Check\+IDValidity (\begin{DoxyParamCaption}\item[{int}]{IDNumber }\end{DoxyParamCaption})}
+
+
+
+Computes whether an ID number is a valid Te\textquotesingle{}udat Zehut number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IDNumber} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the ID number is valid or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ex01_805_8h_a770d634d90d26426e496c972f10d9597}\label{_ex01_805_8h_a770d634d90d26426e496c972f10d9597}} 
+\index{Ex01.05.h@{Ex01.05.h}!DoubleDigit@{DoubleDigit}}
+\index{DoubleDigit@{DoubleDigit}!Ex01.05.h@{Ex01.05.h}}
+\doxysubsubsection{\texorpdfstring{DoubleDigit()}{DoubleDigit()}}
+{\footnotesize\ttfamily int Double\+Digit (\begin{DoxyParamCaption}\item[{int}]{current\+Digit }\end{DoxyParamCaption})}
+
+
+
+Doubles the current digit and adds the digits of the product if it is greater than 10. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Digit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double\+Digit the double of current\+Digit or the sum of its digits 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ex01_805_8h_ab25fb5191a75026f4c9704cc81f9eb70}\label{_ex01_805_8h_ab25fb5191a75026f4c9704cc81f9eb70}} 
+\index{Ex01.05.h@{Ex01.05.h}!GetIDNumberInput@{GetIDNumberInput}}
+\index{GetIDNumberInput@{GetIDNumberInput}!Ex01.05.h@{Ex01.05.h}}
+\doxysubsubsection{\texorpdfstring{GetIDNumberInput()}{GetIDNumberInput()}}
+{\footnotesize\ttfamily int Get\+IDNumber\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+gets an ID number as input from user 
+
+\begin{DoxyReturn}{Returns}
+inputted ID number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ex01_805_8h_aae2dc2abb19f02a391fa38f09f11ee3a}\label{_ex01_805_8h_aae2dc2abb19f02a391fa38f09f11ee3a}} 
+\index{Ex01.05.h@{Ex01.05.h}!GetNextIndividualDigit@{GetNextIndividualDigit}}
+\index{GetNextIndividualDigit@{GetNextIndividualDigit}!Ex01.05.h@{Ex01.05.h}}
+\doxysubsubsection{\texorpdfstring{GetNextIndividualDigit()}{GetNextIndividualDigit()}}
+{\footnotesize\ttfamily int Get\+Next\+Individual\+Digit (\begin{DoxyParamCaption}\item[{int}]{IDNumber }\end{DoxyParamCaption})}
+
+
+
+computes right most digit of ID number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IDNumber} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+right most digit of the ID number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ex01_805_8h_a5c0e5d00903bddcd54e791b26f4ee493}\label{_ex01_805_8h_a5c0e5d00903bddcd54e791b26f4ee493}} 
+\index{Ex01.05.h@{Ex01.05.h}!IDIsInRange@{IDIsInRange}}
+\index{IDIsInRange@{IDIsInRange}!Ex01.05.h@{Ex01.05.h}}
+\doxysubsubsection{\texorpdfstring{IDIsInRange()}{IDIsInRange()}}
+{\footnotesize\ttfamily bool IDIs\+In\+Range (\begin{DoxyParamCaption}\item[{int}]{IDNumber }\end{DoxyParamCaption})}
+
+
+
+checks the ID number is in the range of ID\+\_\+\+MIN and ID\+\_\+\+MAX 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IDNumber} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if in range, false if out of range 
+\end{DoxyReturn}

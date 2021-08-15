@@ -1,0 +1,285 @@
+\hypertarget{_ex01_806_8c}{}\doxysection{Ex01.06/\+Ex01.06.c File Reference}
+\label{_ex01_806_8c}\index{Ex01.06/Ex01.06.c@{Ex01.06/Ex01.06.c}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Ex01.\+06.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_ex01_806_8c_afada77902408069d780580e010486286}{ID\+\_\+\+MIN}}~10000000
+\item 
+\#define \mbox{\hyperlink{_ex01_806_8c_abbd59523961c68f6a95e165f82aeed6e}{ID\+\_\+\+MAX}}~99999999
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_ex01_806_8c_ab25fb5191a75026f4c9704cc81f9eb70}{Get\+IDNumber\+Input}} (void)
+\begin{DoxyCompactList}\small\item\em gets an ID number as input from user \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_ex01_806_8c_a5c0e5d00903bddcd54e791b26f4ee493}{IDIs\+In\+Range}} (int IDNumber)
+\begin{DoxyCompactList}\small\item\em checks the ID number is in the range of ID\+\_\+\+MIN and ID\+\_\+\+MAX \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_806_8c_aae2dc2abb19f02a391fa38f09f11ee3a}{Get\+Next\+Individual\+Digit}} (int IDNumber)
+\begin{DoxyCompactList}\small\item\em computes right most digit of ID number \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_806_8c_a6f132c07e36fcb009572a173ab4029be}{add\+Product\+Digits}} (int current\+Digit\+Doubled)
+\begin{DoxyCompactList}\small\item\em Computes the sum of the digits of a two digit number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_806_8c_a770d634d90d26426e496c972f10d9597}{Double\+Digit}} (int current\+Digit)
+\begin{DoxyCompactList}\small\item\em Doubles the current digit and adds the digits of the product if it is greater than 10. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_806_8c_a180caf99eabc846dd13daa7218ffbfac}{Compute\+IDCheck\+Digit}} (int IDNumber)
+\begin{DoxyCompactList}\small\item\em Computes the check digit used to determine the validity of an ID number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_806_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_ex01_806_8c_abbd59523961c68f6a95e165f82aeed6e}\label{_ex01_806_8c_abbd59523961c68f6a95e165f82aeed6e}} 
+\index{Ex01.06.c@{Ex01.06.c}!ID\_MAX@{ID\_MAX}}
+\index{ID\_MAX@{ID\_MAX}!Ex01.06.c@{Ex01.06.c}}
+\doxysubsubsection{\texorpdfstring{ID\_MAX}{ID\_MAX}}
+{\footnotesize\ttfamily \#define ID\+\_\+\+MAX~99999999}
+
+
+
+Definition at line 6 of file Ex01.\+06.\+c.
+
+\mbox{\Hypertarget{_ex01_806_8c_afada77902408069d780580e010486286}\label{_ex01_806_8c_afada77902408069d780580e010486286}} 
+\index{Ex01.06.c@{Ex01.06.c}!ID\_MIN@{ID\_MIN}}
+\index{ID\_MIN@{ID\_MIN}!Ex01.06.c@{Ex01.06.c}}
+\doxysubsubsection{\texorpdfstring{ID\_MIN}{ID\_MIN}}
+{\footnotesize\ttfamily \#define ID\+\_\+\+MIN~10000000}
+
+
+
+Definition at line 5 of file Ex01.\+06.\+c.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ex01_806_8c_a6f132c07e36fcb009572a173ab4029be}\label{_ex01_806_8c_a6f132c07e36fcb009572a173ab4029be}} 
+\index{Ex01.06.c@{Ex01.06.c}!addProductDigits@{addProductDigits}}
+\index{addProductDigits@{addProductDigits}!Ex01.06.c@{Ex01.06.c}}
+\doxysubsubsection{\texorpdfstring{addProductDigits()}{addProductDigits()}}
+{\footnotesize\ttfamily int add\+Product\+Digits (\begin{DoxyParamCaption}\item[{int}]{current\+Digit\+Doubled }\end{DoxyParamCaption})}
+
+
+
+Computes the sum of the digits of a two digit number. 
+
+Computes the som of the digits of a two digit number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Digit\+Doubled} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sum of the digits 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file Ex01.\+06.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35 \{}
+\DoxyCodeLine{36     \textcolor{keywordtype}{int} units = currentDigitDoubled \% 10;}
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} tens = currentDigitDoubled / 10;}
+\DoxyCodeLine{38     \textcolor{keywordflow}{return} units + tens;}
+\DoxyCodeLine{39 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_806_8c_a180caf99eabc846dd13daa7218ffbfac}\label{_ex01_806_8c_a180caf99eabc846dd13daa7218ffbfac}} 
+\index{Ex01.06.c@{Ex01.06.c}!ComputeIDCheckDigit@{ComputeIDCheckDigit}}
+\index{ComputeIDCheckDigit@{ComputeIDCheckDigit}!Ex01.06.c@{Ex01.06.c}}
+\doxysubsubsection{\texorpdfstring{ComputeIDCheckDigit()}{ComputeIDCheckDigit()}}
+{\footnotesize\ttfamily int Compute\+IDCheck\+Digit (\begin{DoxyParamCaption}\item[{int}]{IDNumber }\end{DoxyParamCaption})}
+
+
+
+Computes the check digit used to determine the validity of an ID number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IDNumber} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+check digit 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Ex01.\+06.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{}
+\DoxyCodeLine{51     \textcolor{keywordtype}{int} sumOfDigits = 0;}
+\DoxyCodeLine{52     \textcolor{keywordtype}{int} weight = 2;}
+\DoxyCodeLine{53     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} index = 1; index <= \mbox{\hyperlink{_ex01_806_8c_afada77902408069d780580e010486286}{ID\_MIN}}; index *= 10)}
+\DoxyCodeLine{54     \{}
+\DoxyCodeLine{55         \textcolor{keywordtype}{int} currentDigit = \mbox{\hyperlink{_ex01_806_8c_aae2dc2abb19f02a391fa38f09f11ee3a}{GetNextIndividualDigit}}(IDNumber);}
+\DoxyCodeLine{56         \textcolor{keywordflow}{if} (weight == 1)}
+\DoxyCodeLine{57         \{}
+\DoxyCodeLine{58             weight++;}
+\DoxyCodeLine{59         \}}
+\DoxyCodeLine{60         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{61         \{}
+\DoxyCodeLine{62             currentDigit = \mbox{\hyperlink{_ex01_806_8c_a770d634d90d26426e496c972f10d9597}{DoubleDigit}}(currentDigit);}
+\DoxyCodeLine{63             weight-\/-\/;}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65         sumOfDigits += currentDigit;}
+\DoxyCodeLine{66         IDNumber /= 10;}
+\DoxyCodeLine{67     \}}
+\DoxyCodeLine{68     \textcolor{keywordtype}{int} checkDigit = 10 -\/ (sumOfDigits \% 10);}
+\DoxyCodeLine{69     \textcolor{keywordflow}{return} checkDigit;}
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_806_8c_a770d634d90d26426e496c972f10d9597}\label{_ex01_806_8c_a770d634d90d26426e496c972f10d9597}} 
+\index{Ex01.06.c@{Ex01.06.c}!DoubleDigit@{DoubleDigit}}
+\index{DoubleDigit@{DoubleDigit}!Ex01.06.c@{Ex01.06.c}}
+\doxysubsubsection{\texorpdfstring{DoubleDigit()}{DoubleDigit()}}
+{\footnotesize\ttfamily int Double\+Digit (\begin{DoxyParamCaption}\item[{int}]{current\+Digit }\end{DoxyParamCaption})}
+
+
+
+Doubles the current digit and adds the digits of the product if it is greater than 10. 
+
+Doubles the current digit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Digit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double\+Digit the double of current\+Digit or the sum of its digits 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file Ex01.\+06.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} doubledDigit = currentDigit * 2;}
+\DoxyCodeLine{45     \textcolor{keywordflow}{return} (doubledDigit >= 10) ? \mbox{\hyperlink{_ex01_806_8c_a6f132c07e36fcb009572a173ab4029be}{addProductDigits}}(doubledDigit) : doubledDigit;}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_806_8c_ab25fb5191a75026f4c9704cc81f9eb70}\label{_ex01_806_8c_ab25fb5191a75026f4c9704cc81f9eb70}} 
+\index{Ex01.06.c@{Ex01.06.c}!GetIDNumberInput@{GetIDNumberInput}}
+\index{GetIDNumberInput@{GetIDNumberInput}!Ex01.06.c@{Ex01.06.c}}
+\doxysubsubsection{\texorpdfstring{GetIDNumberInput()}{GetIDNumberInput()}}
+{\footnotesize\ttfamily int Get\+IDNumber\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+gets an ID number as input from user 
+
+Asks the user for an ID number as input.
+
+\begin{DoxyReturn}{Returns}
+inputted ID number 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file Ex01.\+06.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} IDNumber;}
+\DoxyCodeLine{12     scanf\_s(\textcolor{stringliteral}{"{} \%d"{}}, \&IDNumber);}
+\DoxyCodeLine{13     \textcolor{keywordflow}{return} IDNumber;}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_806_8c_aae2dc2abb19f02a391fa38f09f11ee3a}\label{_ex01_806_8c_aae2dc2abb19f02a391fa38f09f11ee3a}} 
+\index{Ex01.06.c@{Ex01.06.c}!GetNextIndividualDigit@{GetNextIndividualDigit}}
+\index{GetNextIndividualDigit@{GetNextIndividualDigit}!Ex01.06.c@{Ex01.06.c}}
+\doxysubsubsection{\texorpdfstring{GetNextIndividualDigit()}{GetNextIndividualDigit()}}
+{\footnotesize\ttfamily int Get\+Next\+Individual\+Digit (\begin{DoxyParamCaption}\item[{int}]{IDNumber }\end{DoxyParamCaption})}
+
+
+
+computes right most digit of ID number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IDNumber} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+right most digit of the ID number 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file Ex01.\+06.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29 \{}
+\DoxyCodeLine{30     \textcolor{keywordflow}{return} IDNumber \% 10;}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_806_8c_a5c0e5d00903bddcd54e791b26f4ee493}\label{_ex01_806_8c_a5c0e5d00903bddcd54e791b26f4ee493}} 
+\index{Ex01.06.c@{Ex01.06.c}!IDIsInRange@{IDIsInRange}}
+\index{IDIsInRange@{IDIsInRange}!Ex01.06.c@{Ex01.06.c}}
+\doxysubsubsection{\texorpdfstring{IDIsInRange()}{IDIsInRange()}}
+{\footnotesize\ttfamily bool IDIs\+In\+Range (\begin{DoxyParamCaption}\item[{int}]{IDNumber }\end{DoxyParamCaption})}
+
+
+
+checks the ID number is in the range of ID\+\_\+\+MIN and ID\+\_\+\+MAX 
+
+Checks the ID number is in the range of ID\+\_\+\+MIN and ID\+\_\+\+MAX.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IDNumber} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if in range, false if out of range 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file Ex01.\+06.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keywordtype}{bool} isValidIDNumber = \textcolor{keyword}{false};}
+\DoxyCodeLine{20     \textcolor{keywordflow}{if} (IDNumber >= \mbox{\hyperlink{_ex01_806_8c_afada77902408069d780580e010486286}{ID\_MIN}} \&\& IDNumber <= \mbox{\hyperlink{_ex01_806_8c_abbd59523961c68f6a95e165f82aeed6e}{ID\_MAX}})}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         isValidIDNumber = \textcolor{keyword}{true};}
+\DoxyCodeLine{23     \}}
+\DoxyCodeLine{24     \textcolor{keywordflow}{return} isValidIDNumber;}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_806_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{_ex01_806_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{Ex01.06.c@{Ex01.06.c}!main@{main}}
+\index{main@{main}!Ex01.06.c@{Ex01.06.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file Ex01.\+06.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73 \{}
+\DoxyCodeLine{74     printf\_s(\textcolor{stringliteral}{"{}Enter an ID number without the check digit:"{}});}
+\DoxyCodeLine{75     \textcolor{keywordtype}{int} IDNumber = \mbox{\hyperlink{_ex01_806_8c_ab25fb5191a75026f4c9704cc81f9eb70}{GetIDNumberInput}}();}
+\DoxyCodeLine{76     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{_ex01_806_8c_a5c0e5d00903bddcd54e791b26f4ee493}{IDIsInRange}}(IDNumber))}
+\DoxyCodeLine{77     \{}
+\DoxyCodeLine{78         printf\_s(\textcolor{stringliteral}{"{}Inputted ID number was too long or too short.\(\backslash\)n"{}});}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80     \textcolor{keywordtype}{int} checkDigit = \mbox{\hyperlink{_ex01_806_8c_a180caf99eabc846dd13daa7218ffbfac}{ComputeIDCheckDigit}}(IDNumber);}
+\DoxyCodeLine{81     printf\_s(\textcolor{stringliteral}{"{}The check digit is \%d"{}}, checkDigit);}
+\DoxyCodeLine{82     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{83 \}}
+
+\end{DoxyCode}

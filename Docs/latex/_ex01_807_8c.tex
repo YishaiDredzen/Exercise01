@@ -1,0 +1,89 @@
+\hypertarget{_ex01_807_8c}{}\doxysection{Ex01.07/\+Ex01.07.c File Reference}
+\label{_ex01_807_8c}\index{Ex01.07/Ex01.07.c@{Ex01.07/Ex01.07.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Ex01.\+07.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_ex01_807_8c_a0bda8df42603b6212b75c84c881edf58}{Print\+Number}} (int input\+Number)
+\begin{DoxyCompactList}\small\item\em Prints inputted number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ex01_807_8c_a3623a777e2c497436c0179f57e947ac8}{Get\+Number\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Asks user to enter a number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_807_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ex01_807_8c_a3623a777e2c497436c0179f57e947ac8}\label{_ex01_807_8c_a3623a777e2c497436c0179f57e947ac8}} 
+\index{Ex01.07.c@{Ex01.07.c}!GetNumberInput@{GetNumberInput}}
+\index{GetNumberInput@{GetNumberInput}!Ex01.07.c@{Ex01.07.c}}
+\doxysubsubsection{\texorpdfstring{GetNumberInput()}{GetNumberInput()}}
+{\footnotesize\ttfamily void Get\+Number\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Asks user to enter a number. 
+
+Asks the user to input a number. 
+
+Definition at line 11 of file Ex01.\+07.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     printf\_s(\textcolor{stringliteral}{"{}Enter a number (0 to exit): "{}});}
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} numberInputted;}
+\DoxyCodeLine{15     scanf\_s(\textcolor{stringliteral}{"{} \%d"{}}, \&numberInputted);}
+\DoxyCodeLine{16     \textcolor{keywordflow}{if} (numberInputted != 0)}
+\DoxyCodeLine{17     \{}
+\DoxyCodeLine{18         \mbox{\hyperlink{_ex01_807_8c_a3623a777e2c497436c0179f57e947ac8}{GetNumberInput}}();}
+\DoxyCodeLine{19         \mbox{\hyperlink{_ex01_807_8c_a0bda8df42603b6212b75c84c881edf58}{PrintNumber}}(numberInputted);}
+\DoxyCodeLine{20     \}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_807_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_ex01_807_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Ex01.07.c@{Ex01.07.c}!main@{main}}
+\index{main@{main}!Ex01.07.c@{Ex01.07.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Ex01.\+07.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     \mbox{\hyperlink{_ex01_807_8c_a3623a777e2c497436c0179f57e947ac8}{GetNumberInput}}();}
+\DoxyCodeLine{27     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_ex01_807_8c_a0bda8df42603b6212b75c84c881edf58}\label{_ex01_807_8c_a0bda8df42603b6212b75c84c881edf58}} 
+\index{Ex01.07.c@{Ex01.07.c}!PrintNumber@{PrintNumber}}
+\index{PrintNumber@{PrintNumber}!Ex01.07.c@{Ex01.07.c}}
+\doxysubsubsection{\texorpdfstring{PrintNumber()}{PrintNumber()}}
+{\footnotesize\ttfamily void Print\+Number (\begin{DoxyParamCaption}\item[{int}]{input\+Number }\end{DoxyParamCaption})}
+
+
+
+Prints inputted number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Number} & the number inputted by the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 5 of file Ex01.\+07.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     printf\_s(\textcolor{stringliteral}{"{}\%d "{}}, inputNumber);}
+\DoxyCodeLine{8 \}}
+
+\end{DoxyCode}
