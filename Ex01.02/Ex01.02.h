@@ -12,7 +12,7 @@
 void PrintUpperCaseInputtedChar(char input);
 
 /**
- *@brief Asks user for a character input till 'Q' or 'q' is entered.
+ *@brief Asks user for a character input until 'Q' or 'q' is entered.
  */
 void GetCharInput();
 
