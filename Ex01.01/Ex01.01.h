@@ -6,12 +6,12 @@
  */
 
  /**
-  *@brief Receives inputted character till 'Q' or 'q' is inputted.
+  *@brief Receives inputted character until 'Q' or 'q' is inputted.
   */
 void getCharInput(void);
 
 /**
- *@brief Prints received inputted character till 'Q' or 'q' is inputted
+ *@brief Prints received inputted character
  *
  *@param input the character the user had inputted
  */
