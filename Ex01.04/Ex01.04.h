@@ -12,19 +12,7 @@
 int GetDiamondBaseSizeInput(void);
 
 /**
- *@brief Prints a number of stars in the row.
- *@param numberOfStars hte number of stars to be printed in the row.
- */
-void PrintStars(int numberOfStars);
-
-/**
- *@brief Prints a number of spaces in the row.
- *@param numberOfSpaces the number of spaces to be printed
- */
-void PrintSpaces(int numberOfSpaces);
-
-/**
- *@brief Controls the printing of spaces and stars.
+ *@brief Prints a diamond of stars.
  *@param diamondBaseSize the number of stars at the base of the diamond.
  */
 void PrintDiamond(int diamondBaseSize);

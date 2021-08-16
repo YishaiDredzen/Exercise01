@@ -5,12 +5,8 @@
 \item 
 int \mbox{\hyperlink{_ex01_804_8h_abd1137c84197eca32b4bb27bfc97a983}{Get\+Diamond\+Base\+Size\+Input}} (void)
 \begin{DoxyCompactList}\small\item\em Asks user for an odd number as input for a base of a diamond. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_ex01_804_8h_a3f10993e1f38c8ec3dccd61eec047a83}{Print\+Stars}} (int number\+Of\+Stars)
-\begin{DoxyCompactList}\small\item\em Prints a number of stars in the row. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_ex01_804_8h_a6cd4c2e21d7ce84d8b639933a2c01089}{Print\+Spaces}} (int number\+Of\+Spaces)
-\begin{DoxyCompactList}\small\item\em Prints a number of spaces in the row. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_ex01_804_8h_ac79300cdef3087423454caeb1bd3bc15}{Print\+Diamond}} (int diamond\+Base\+Size)
-\begin{DoxyCompactList}\small\item\em Controls the printing of spaces and stars. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Prints a diamond of stars. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -34,12 +30,12 @@ Definition at line 6 of file Ex01.\+04.\+c.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{7 \{}
-\DoxyCodeLine{8     \textcolor{keywordtype}{int} diamondBaseSize;}
+\DoxyCodeLine{8     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} diamondBaseSize;}
 \DoxyCodeLine{9     printf\_s(\textcolor{stringliteral}{"{}Enter an odd number: "{}});}
-\DoxyCodeLine{10     scanf\_s(\textcolor{stringliteral}{"{}\%d"{}}, \&diamondBaseSize);}
+\DoxyCodeLine{10     scanf\_s(\textcolor{stringliteral}{"{}\%u"{}}, \&diamondBaseSize);}
 \DoxyCodeLine{11     \textcolor{keywordflow}{if} (diamondBaseSize \% 2 == 0)}
 \DoxyCodeLine{12     \{}
-\DoxyCodeLine{13         \textcolor{keywordflow}{return} 0; \textcolor{comment}{/*didn't know what to return for an error*/}}
+\DoxyCodeLine{13         \textcolor{keywordflow}{return} 0;}
 \DoxyCodeLine{14     \}}
 \DoxyCodeLine{15     \textcolor{keywordflow}{else}}
 \DoxyCodeLine{16     \{}
@@ -56,7 +52,7 @@ Definition at line 6 of file Ex01.\+04.\+c.
 
 
 
-Controls the printing of spaces and stars. 
+Prints a diamond of stars. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -65,79 +61,28 @@ Controls the printing of spaces and stars.
 \end{DoxyParams}
 
 
-Definition at line 41 of file Ex01.\+04.\+c.
+Definition at line 24 of file Ex01.\+04.\+c.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{42 \{}
-\DoxyCodeLine{43     \textcolor{keywordtype}{int} linesFromBase = diamondBaseSize / 2;}
-\DoxyCodeLine{44     \textcolor{keywordtype}{int} numberOfStars;}
-\DoxyCodeLine{45     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} rowNumber = 0; rowNumber < diamondBaseSize; rowNumber++)}
-\DoxyCodeLine{46     \{}
-\DoxyCodeLine{47         \textcolor{keywordtype}{int} numberOfSpaces = abs(linesFromBase -\/ rowNumber);}
-\DoxyCodeLine{48         \mbox{\hyperlink{_ex01_804_8c_a6cd4c2e21d7ce84d8b639933a2c01089}{PrintSpaces}}(numberOfSpaces);}
-\DoxyCodeLine{49         numberOfStars = diamondBaseSize -\/ (2 * numberOfSpaces);}
-\DoxyCodeLine{50         \mbox{\hyperlink{_ex01_804_8c_a3f10993e1f38c8ec3dccd61eec047a83}{PrintStars}}(numberOfStars);}
-\DoxyCodeLine{51     \}}
-\DoxyCodeLine{52 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{_ex01_804_8h_a6cd4c2e21d7ce84d8b639933a2c01089}\label{_ex01_804_8h_a6cd4c2e21d7ce84d8b639933a2c01089}} 
-\index{Ex01.04.h@{Ex01.04.h}!PrintSpaces@{PrintSpaces}}
-\index{PrintSpaces@{PrintSpaces}!Ex01.04.h@{Ex01.04.h}}
-\doxysubsubsection{\texorpdfstring{PrintSpaces()}{PrintSpaces()}}
-{\footnotesize\ttfamily void Print\+Spaces (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Spaces }\end{DoxyParamCaption})}
-
-
-
-Prints a number of spaces in the row. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em number\+Of\+Spaces} & the number of spaces to be printed \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 32 of file Ex01.\+04.\+c.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{33 \{}
-\DoxyCodeLine{34     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} index = 0; index < numberOfSpaces; ++index)}
-\DoxyCodeLine{35     \{}
-\DoxyCodeLine{36         printf\_s(\textcolor{stringliteral}{"{} "{}});}
-\DoxyCodeLine{37     \}}
-\DoxyCodeLine{38 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{_ex01_804_8h_a3f10993e1f38c8ec3dccd61eec047a83}\label{_ex01_804_8h_a3f10993e1f38c8ec3dccd61eec047a83}} 
-\index{Ex01.04.h@{Ex01.04.h}!PrintStars@{PrintStars}}
-\index{PrintStars@{PrintStars}!Ex01.04.h@{Ex01.04.h}}
-\doxysubsubsection{\texorpdfstring{PrintStars()}{PrintStars()}}
-{\footnotesize\ttfamily void Print\+Stars (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Stars }\end{DoxyParamCaption})}
-
-
-
-Prints a number of stars in the row. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em number\+Of\+Stars} & hte number of stars to be printed in the row. \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 22 of file Ex01.\+04.\+c.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{23 \{}
-\DoxyCodeLine{24     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} index = 1; index <= numberOfStars; ++index)}
-\DoxyCodeLine{25     \{}
-\DoxyCodeLine{26         printf\_s(\textcolor{stringliteral}{"{}*"{}});}
-\DoxyCodeLine{27     \}}
-\DoxyCodeLine{28     printf\_s(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
-\DoxyCodeLine{29 \}}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} linesFromBase = diamondBaseSize / 2;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} numberOfStars;}
+\DoxyCodeLine{28     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} rowNumber = 0; rowNumber < diamondBaseSize; rowNumber++)}
+\DoxyCodeLine{29     \{}
+\DoxyCodeLine{30         \textcolor{keywordtype}{int} numberOfSpaces = abs(linesFromBase -\/ rowNumber);}
+\DoxyCodeLine{31         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} index = 0; index < numberOfSpaces; ++index)}
+\DoxyCodeLine{32         \{}
+\DoxyCodeLine{33             printf\_s(\textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{34         \}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         numberOfStars = diamondBaseSize -\/ (2 * numberOfSpaces);}
+\DoxyCodeLine{37         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} index = 1; index <= numberOfStars; ++index)}
+\DoxyCodeLine{38         \{}
+\DoxyCodeLine{39             printf\_s(\textcolor{stringliteral}{"{}*"{}});}
+\DoxyCodeLine{40         \}}
+\DoxyCodeLine{41         printf\_s(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{42     \}}
+\DoxyCodeLine{43 \}}
 
 \end{DoxyCode}
