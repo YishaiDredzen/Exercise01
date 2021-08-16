@@ -17,7 +17,7 @@ void PrintUpperCaseInputtedChar(char input)
 
 }
 
-/*Asks for the user to input a character till 'Q' or 'q' is entered*/
+/*Asks for the user to input a character until 'Q' or 'q' is entered*/
 void GetCharInput()
 {
     printf_s("Enter a character ('Q' or 'q' to Quit): ");
