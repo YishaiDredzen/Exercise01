@@ -27,9 +27,10 @@ var NAVTREE =
   [ "C Workshop - Homework Assignment 1", "index.html", [
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
+      [ "Globals", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -37,7 +38,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_ex01_801_8h.html"
+"_ex01_801_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

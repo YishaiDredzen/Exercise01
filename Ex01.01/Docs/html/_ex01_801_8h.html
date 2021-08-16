@@ -104,10 +104,10 @@ $(document).ready(function(){initNavTree('_ex01_801_8h.html',''); initResizable(
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aae999dfef90392cc391cbb66fb7a3424"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ex01_801_8h.html#aae999dfef90392cc391cbb66fb7a3424">getCharInput</a> (void)</td></tr>
-<tr class="memdesc:aae999dfef90392cc391cbb66fb7a3424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives inputted character till 'Q' or 'q' is inputtedssss.  <a href="_ex01_801_8h.html#aae999dfef90392cc391cbb66fb7a3424">More...</a><br /></td></tr>
+<tr class="memdesc:aae999dfef90392cc391cbb66fb7a3424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives inputted character until 'Q' or 'q' is inputted.  <a href="_ex01_801_8h.html#aae999dfef90392cc391cbb66fb7a3424">More...</a><br /></td></tr>
 <tr class="separator:aae999dfef90392cc391cbb66fb7a3424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5be23f5070dff2f60a574957f8a606b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ex01_801_8h.html#ae5be23f5070dff2f60a574957f8a606b">printInputtedChar</a> (char input)</td></tr>
-<tr class="memdesc:ae5be23f5070dff2f60a574957f8a606b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints received inputted character till 'Q' or 'q' is inputted.  <a href="_ex01_801_8h.html#ae5be23f5070dff2f60a574957f8a606b">More...</a><br /></td></tr>
+<tr class="memdesc:ae5be23f5070dff2f60a574957f8a606b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints received inputted character until 'Q' or 'q' is inputted.  <a href="_ex01_801_8h.html#ae5be23f5070dff2f60a574957f8a606b">More...</a><br /></td></tr>
 <tr class="separator:ae5be23f5070dff2f60a574957f8a606b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -127,8 +127,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Receives inputted character till 'Q' or 'q' is inputtedssss. </p>
+<p>Receives inputted character until 'Q' or 'q' is inputted. </p>
 
+<p class="definition">Definition at line <a class="el" href="_ex01_801_8c_source.html#l00013">13</a> of file <a class="el" href="_ex01_801_8c_source.html">Ex01.01.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    printf_s(<span class="stringliteral">&quot;Enter a character (&#39;Q&#39; or &#39;q&#39; to Quit): &quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">char</span> input;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    scanf_s(<span class="stringliteral">&quot; %c&quot;</span>, &amp;input, <a class="code" href="_ex01_801_8c.html#abcf72cd23bdafb47b19023d91b4c107d">INPUT_SIZE</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span> (input != <span class="charliteral">&#39;q&#39;</span> &amp;&amp; input != <span class="charliteral">&#39;Q&#39;</span>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">printInputtedChar</a>(input);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="_ex01_801_8c.html#aae999dfef90392cc391cbb66fb7a3424">getCharInput</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="ttc" id="a_ex01_801_8c_html_aae999dfef90392cc391cbb66fb7a3424"><div class="ttname"><a href="_ex01_801_8c.html#aae999dfef90392cc391cbb66fb7a3424">getCharInput</a></div><div class="ttdeci">void getCharInput(void)</div><div class="ttdoc">Receives inputted character until 'Q' or 'q' is inputted.</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00013">Ex01.01.c:13</a></div></div>
+<div class="ttc" id="a_ex01_801_8c_html_abcf72cd23bdafb47b19023d91b4c107d"><div class="ttname"><a href="_ex01_801_8c.html#abcf72cd23bdafb47b19023d91b4c107d">INPUT_SIZE</a></div><div class="ttdeci">#define INPUT_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00004">Ex01.01.c:4</a></div></div>
+<div class="ttc" id="a_ex01_801_8c_html_ae5be23f5070dff2f60a574957f8a606b"><div class="ttname"><a href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">printInputtedChar</a></div><div class="ttdeci">void printInputtedChar(char input)</div><div class="ttdoc">Prints received inputted character until 'Q' or 'q' is inputted.</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00007">Ex01.01.c:7</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae5be23f5070dff2f60a574957f8a606b"></a>
@@ -147,7 +162,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Prints received inputted character till 'Q' or 'q' is inputted. </p>
+<p>Prints received inputted character until 'Q' or 'q' is inputted. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the character the user had inputted </td></tr>
@@ -155,6 +170,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_ex01_801_8c_source.html#l00007">7</a> of file <a class="el" href="_ex01_801_8c_source.html">Ex01.01.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    printf_s(<span class="stringliteral">&quot;%c\n&quot;</span>, input);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

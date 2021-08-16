@@ -96,38 +96,40 @@ $(document).ready(function(){initNavTree('_ex01_801_8c_source.html',''); initRes
 <div class="title">Ex01.01.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_ex01_801_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ex0101_8h.html">Ex0101.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">/*Prints received inputted character till &#39;Q&#39; or &#39;q&#39; is inputted*/</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">    6</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">printInputtedChar</a>(<span class="keywordtype">char</span> input)</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    printf_s(<span class="stringliteral">&quot;%c\n&quot;</span>, input);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*Receives inputted character till &#39;Q&#39; or &#39;q&#39; is inputted*/</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_ex01_801_8c.html#af291203f8b6ea68aeb856442d88b986f">   12</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_ex01_801_8c.html#af291203f8b6ea68aeb856442d88b986f">getCharInput</a>()</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    printf_s(<span class="stringliteral">&quot;Enter a character (&#39;Q&#39; or &#39;q&#39; to Quit): &quot;</span>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">char</span> input;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    scanf_s(<span class="stringliteral">&quot; %c&quot;</span>, &amp;input);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span> (input != <span class="charliteral">&#39;q&#39;</span> &amp;&amp; input != <span class="charliteral">&#39;Q&#39;</span>)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">printInputtedChar</a>(input);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="_ex01_801_8c.html#af291203f8b6ea68aeb856442d88b986f">getCharInput</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_ex01_801_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   24</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_ex01_801_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="_ex01_801_8c.html#af291203f8b6ea68aeb856442d88b986f">getCharInput</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="ttc" id="a_ex0101_8h_html"><div class="ttname"><a href="_ex0101_8h.html">Ex0101.h</a></div></div>
-<div class="ttc" id="a_ex01_801_8c_html_ae5be23f5070dff2f60a574957f8a606b"><div class="ttname"><a href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">printInputtedChar</a></div><div class="ttdeci">void printInputtedChar(char input)</div><div class="ttdoc">Prints received inputted character till 'Q' or 'q' is inputted.</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00006">Ex01.01.c:6</a></div></div>
-<div class="ttc" id="a_ex01_801_8c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_ex01_801_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00024">Ex01.01.c:24</a></div></div>
-<div class="ttc" id="a_ex01_801_8c_html_af291203f8b6ea68aeb856442d88b986f"><div class="ttname"><a href="_ex01_801_8c.html#af291203f8b6ea68aeb856442d88b986f">getCharInput</a></div><div class="ttdeci">void getCharInput()</div><div class="ttdoc">Receives inputted character till 'Q' or 'q' is inputted.</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00012">Ex01.01.c:12</a></div></div>
+<a href="_ex01_801_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ex01_801_8h.html">Ex01.01.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="_ex01_801_8c.html#abcf72cd23bdafb47b19023d91b4c107d">    4</a></span>&#160;<span class="preprocessor">#define INPUT_SIZE 1</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/*Prints received inputted character until &#39;Q&#39; or &#39;q&#39; is inputted*/</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">    7</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">printInputtedChar</a>(<span class="keywordtype">char</span> input)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    printf_s(<span class="stringliteral">&quot;%c\n&quot;</span>, input);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*Receives inputted character until &#39;Q&#39; or &#39;q&#39; is inputted*/</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_ex01_801_8c.html#aae999dfef90392cc391cbb66fb7a3424">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_ex01_801_8c.html#aae999dfef90392cc391cbb66fb7a3424">getCharInput</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    printf_s(<span class="stringliteral">&quot;Enter a character (&#39;Q&#39; or &#39;q&#39; to Quit): &quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">char</span> input;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    scanf_s(<span class="stringliteral">&quot; %c&quot;</span>, &amp;input, <a class="code" href="_ex01_801_8c.html#abcf72cd23bdafb47b19023d91b4c107d">INPUT_SIZE</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span> (input != <span class="charliteral">&#39;q&#39;</span> &amp;&amp; input != <span class="charliteral">&#39;Q&#39;</span>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">printInputtedChar</a>(input);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="_ex01_801_8c.html#aae999dfef90392cc391cbb66fb7a3424">getCharInput</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_ex01_801_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   25</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_ex01_801_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="_ex01_801_8c.html#aae999dfef90392cc391cbb66fb7a3424">getCharInput</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="a_ex01_801_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="_ex01_801_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00025">Ex01.01.c:25</a></div></div>
+<div class="ttc" id="a_ex01_801_8c_html_aae999dfef90392cc391cbb66fb7a3424"><div class="ttname"><a href="_ex01_801_8c.html#aae999dfef90392cc391cbb66fb7a3424">getCharInput</a></div><div class="ttdeci">void getCharInput(void)</div><div class="ttdoc">Receives inputted character until 'Q' or 'q' is inputted.</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00013">Ex01.01.c:13</a></div></div>
+<div class="ttc" id="a_ex01_801_8c_html_abcf72cd23bdafb47b19023d91b4c107d"><div class="ttname"><a href="_ex01_801_8c.html#abcf72cd23bdafb47b19023d91b4c107d">INPUT_SIZE</a></div><div class="ttdeci">#define INPUT_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00004">Ex01.01.c:4</a></div></div>
+<div class="ttc" id="a_ex01_801_8c_html_ae5be23f5070dff2f60a574957f8a606b"><div class="ttname"><a href="_ex01_801_8c.html#ae5be23f5070dff2f60a574957f8a606b">printInputtedChar</a></div><div class="ttdeci">void printInputtedChar(char input)</div><div class="ttdoc">Prints received inputted character until 'Q' or 'q' is inputted.</div><div class="ttdef"><b>Definition:</b> <a href="_ex01_801_8c_source.html#l00007">Ex01.01.c:7</a></div></div>
+<div class="ttc" id="a_ex01_801_8h_html"><div class="ttname"><a href="_ex01_801_8h.html">Ex01.01.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,63 +1,81 @@
 \hypertarget{_ex01_801_8c}{}\doxysection{Ex01.01.c File Reference}
 \label{_ex01_801_8c}\index{Ex01.01.c@{Ex01.01.c}}
-{\ttfamily \#include \char`\"{}Ex0101.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ex01.\+01.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_ex01_801_8c_abcf72cd23bdafb47b19023d91b4c107d}{INPUT\+\_\+\+SIZE}}~1
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_ex01_801_8c_ae5be23f5070dff2f60a574957f8a606b}{print\+Inputted\+Char}} (char input)
-\begin{DoxyCompactList}\small\item\em Prints received inputted character till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}{get\+Char\+Input}} ()
-\begin{DoxyCompactList}\small\item\em Receives inputted character till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{_ex01_801_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Prints received inputted character until \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ex01_801_8c_aae999dfef90392cc391cbb66fb7a3424}{get\+Char\+Input}} (void)
+\begin{DoxyCompactList}\small\item\em Receives inputted character until \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ex01_801_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_ex01_801_8c_abcf72cd23bdafb47b19023d91b4c107d}\label{_ex01_801_8c_abcf72cd23bdafb47b19023d91b4c107d}} 
+\index{Ex01.01.c@{Ex01.01.c}!INPUT\_SIZE@{INPUT\_SIZE}}
+\index{INPUT\_SIZE@{INPUT\_SIZE}!Ex01.01.c@{Ex01.01.c}}
+\doxysubsubsection{\texorpdfstring{INPUT\_SIZE}{INPUT\_SIZE}}
+{\footnotesize\ttfamily \#define INPUT\+\_\+\+SIZE~1}
+
+
+
+Definition at line 4 of file Ex01.\+01.\+c.
+
+
+
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}\label{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}} 
+\mbox{\Hypertarget{_ex01_801_8c_aae999dfef90392cc391cbb66fb7a3424}\label{_ex01_801_8c_aae999dfef90392cc391cbb66fb7a3424}} 
 \index{Ex01.01.c@{Ex01.01.c}!getCharInput@{getCharInput}}
 \index{getCharInput@{getCharInput}!Ex01.01.c@{Ex01.01.c}}
 \doxysubsubsection{\texorpdfstring{getCharInput()}{getCharInput()}}
-{\footnotesize\ttfamily void get\+Char\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void get\+Char\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-Receives inputted character till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. 
+Receives inputted character until \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. 
 
 
 
-Definition at line 12 of file Ex01.\+01.\+c.
+Definition at line 13 of file Ex01.\+01.\+c.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{13 \{}
-\DoxyCodeLine{14     printf\_s(\textcolor{stringliteral}{"{}Enter a character ('Q' or 'q' to Quit): "{}});}
-\DoxyCodeLine{15     \textcolor{keywordtype}{char} input;}
-\DoxyCodeLine{16     scanf\_s(\textcolor{stringliteral}{"{} \%c"{}}, \&input);}
-\DoxyCodeLine{17     \textcolor{keywordflow}{if} (input != \textcolor{charliteral}{'q'} \&\& input != \textcolor{charliteral}{'Q'})}
-\DoxyCodeLine{18     \{}
-\DoxyCodeLine{19         \mbox{\hyperlink{_ex01_801_8c_ae5be23f5070dff2f60a574957f8a606b}{printInputtedChar}}(input);}
-\DoxyCodeLine{20         \mbox{\hyperlink{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}{getCharInput}}();}
-\DoxyCodeLine{21     \}}
-\DoxyCodeLine{22 \}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     printf\_s(\textcolor{stringliteral}{"{}Enter a character ('Q' or 'q' to Quit): "{}});}
+\DoxyCodeLine{16     \textcolor{keywordtype}{char} input;}
+\DoxyCodeLine{17     scanf\_s(\textcolor{stringliteral}{"{} \%c"{}}, \&input, \mbox{\hyperlink{_ex01_801_8c_abcf72cd23bdafb47b19023d91b4c107d}{INPUT\_SIZE}});}
+\DoxyCodeLine{18     \textcolor{keywordflow}{if} (input != \textcolor{charliteral}{'q'} \&\& input != \textcolor{charliteral}{'Q'})}
+\DoxyCodeLine{19     \{}
+\DoxyCodeLine{20         \mbox{\hyperlink{_ex01_801_8c_ae5be23f5070dff2f60a574957f8a606b}{printInputtedChar}}(input);}
+\DoxyCodeLine{21         \mbox{\hyperlink{_ex01_801_8c_aae999dfef90392cc391cbb66fb7a3424}{getCharInput}}();}
+\DoxyCodeLine{22     \}}
+\DoxyCodeLine{23 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{_ex01_801_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_ex01_801_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\mbox{\Hypertarget{_ex01_801_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{_ex01_801_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
 \index{Ex01.01.c@{Ex01.01.c}!main@{main}}
 \index{main@{main}!Ex01.01.c@{Ex01.01.c}}
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
-{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-Definition at line 24 of file Ex01.\+01.\+c.
+Definition at line 25 of file Ex01.\+01.\+c.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{25 \{}
-\DoxyCodeLine{26     \mbox{\hyperlink{_ex01_801_8c_af291203f8b6ea68aeb856442d88b986f}{getCharInput}}();}
-\DoxyCodeLine{27     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{28 \}}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27     \mbox{\hyperlink{_ex01_801_8c_aae999dfef90392cc391cbb66fb7a3424}{getCharInput}}();}
+\DoxyCodeLine{28     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{29 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{_ex01_801_8c_ae5be23f5070dff2f60a574957f8a606b}\label{_ex01_801_8c_ae5be23f5070dff2f60a574957f8a606b}} 
@@ -68,7 +86,7 @@ Definition at line 24 of file Ex01.\+01.\+c.
 
 
 
-Prints received inputted character till \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. 
+Prints received inputted character until \textquotesingle{}Q\textquotesingle{} or \textquotesingle{}q\textquotesingle{} is inputted. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -77,12 +95,12 @@ Prints received inputted character till \textquotesingle{}Q\textquotesingle{} or
 \end{DoxyParams}
 
 
-Definition at line 6 of file Ex01.\+01.\+c.
+Definition at line 7 of file Ex01.\+01.\+c.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{7 \{}
-\DoxyCodeLine{8     printf\_s(\textcolor{stringliteral}{"{}\%c\(\backslash\)n"{}}, input);}
-\DoxyCodeLine{9 \}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     printf\_s(\textcolor{stringliteral}{"{}\%c\(\backslash\)n"{}}, input);}
+\DoxyCodeLine{10 \}}
 
 \end{DoxyCode}
