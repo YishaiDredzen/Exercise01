@@ -3,13 +3,13 @@
 
 #define INPUT_SIZE 1
 
-/*Prints received inputted character till 'Q' or 'q' is inputted*/
+/*Prints received inputted character.*/
 void printInputtedChar(char input)
 {
     printf_s("%c\n", input);
 }
 
-/*Receives inputted character till 'Q' or 'q' is inputted*/
+/*Receives inputted character until 'Q' or 'q' is inputted*/
 void getCharInput(void)
 {
     printf_s("Enter a character ('Q' or 'q' to Quit): ");
